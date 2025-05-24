@@ -27,9 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-
         tvHeader = findViewById(R.id.tvHeader)
-        tvHeader.text = "NIM: 235150700111034\nNama: Nur Satria Jatikusumah"
+        tvHeader.text = getString(R.string.nama)
 
         fetchPosts()
     }

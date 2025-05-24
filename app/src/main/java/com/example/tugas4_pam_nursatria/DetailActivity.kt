@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tugas4_pam_nursatria.R
 import com.example.tugas4_pam_nursatria.api.ApiConfig
 import com.example.tugas4_pam_nursatria.api.ApiService
 import com.example.tugas4_pam_nursatria.model.Post
@@ -27,7 +26,7 @@ class DetailActivity : AppCompatActivity() {
         tvTitle = findViewById(R.id.tvTitle)
         tvBody = findViewById(R.id.tvBody)
         tvHeader = findViewById(R.id.tvHeader)
-        tvHeader.text = "NIM: 235150700111034\nNama: Nur Satria Jatikusumah"
+        tvHeader.text = getString(R.string.nama)
 
         val postId = intent.getIntExtra("POST_ID", -1)
         if (postId != -1) {
